@@ -1,5 +1,7 @@
 body {
   background-color: rgb(248, 250, 247);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 header {
   background-color: rgb(203, 235, 203);
@@ -58,11 +60,56 @@ main .product-list article prize {
 div {
   margin-left: 150px;
   display: block;
-  padding-bottom: 0px;
-  margin-bottom: -30px;
+  padding: 0px;
 }
 footer {
   background-color: green;
   text-align: center;
   padding: 30px;
+}
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  main .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  main .product-list article {
+    width: 65%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+  }
+
+  main .product-list article {
+    width: 90%;
+    margin: 15px auto;
+  }
+  div {
+    display: block;
+    padding: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
 }
