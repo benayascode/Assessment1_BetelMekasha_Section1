@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(248, 250, 247);
+}
+header {
+  background-color: rgb(203, 235, 203);
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 550px;
+  font-weight: bold;
+}
+nav ul li {
+  margin: 25px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(21, 167, 21);
+}
+a:hover {
+  background-color: rgb(219, 220, 216);
+  transition: 1s;
+}
+main .product-list {
+  padding-top: 0px;
+  display: flex;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+main .product-list article {
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 20%;
+  border: solid;
+  border-width: 20px;
+  border-color: aliceblue;
+  margin: 50px;
+  box-shadow: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 97%;
+  border-radius: 5px;
+}
+main .product-list article h2,
+p {
+  text-align: center;
+}
+main .product-list article prize {
+  color: rgb(21, 167, 21);
+  font-size: larger;
+  padding: 100px;
+}
+div {
+  margin-left: 150px;
+  display: block;
+  padding-bottom: 0px;
+  margin-bottom: -30px;
+}
+footer {
+  background-color: green;
+  text-align: center;
+  padding: 30px;
+}
